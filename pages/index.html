@@ -17,49 +17,38 @@
         />
     </head>
     <body>
-        <div class="btn">
-            <a href="#" id="active">проба</a>
-        </div>
-        <div class="popup" id="my-popup">
-            <div class="popup__content">
-                <div class="popup__title">
+        <div id="MyModal" class="modal">
+            <div class="zayavka__block1">
+                <span class="close__modal">close</span>
+                <div class="zayavka__title1">
                     <p>Только телефон, и мы в деле</p>
                 </div>
-                <div class="popup__subtitle">
+                <div class="zayavka__subtitle2">
                     <p>
-                        Специалист перезвонит Вам в течение 5 минут, в рабочее
-                        время для уточнения деталей
+                        Специалист перезвонит Вам в течение 5 минут,
+                        в рабочее время для уточнения деталей
                     </p>
                 </div>
-                <form class="popup__form">
-                    <div class="popup__input">
-                        <input type="number" name="" id="" />
+                <form id="connect">
+                    <div class="zayavka__input">
+                        <input type="number" name="" id="number" placeholder="Введите ваш номер телефона"/>
                     </div>
-                    <div class="popup__button">
+                    <div class="zayavka__button">
                         <a href="">Получить консулььтацию</a>
                     </div>
                 </form>
-                <div class="popup__connect">
-                    <div class="popup__connecttitle">
-                        <p>Связаться с нами через мессенджер</p>
+                <div id="massage"></div>
+                <div class="zayavka__svyaz">
+                    <p>Связаться с нами через мессенджер</p>
+                </div>
+                <div class="zayavka__media">
+                    <div class="zayavka__watsapp">
+                        <img src="../img/vibericon.png" alt="" />
+                        <p>WhatsApp</p>
                     </div>
-                    <div class="popup__social">
-                        <div class="popup__telegram">
-                            <div class="popup__icon">
-                                <img src="../img/tgicon.png" alt="" />
-                            </div>
-                            <div class="popup__text">
-                                <p>Telegram</p>
-                            </div>
-                        </div>
-                        <div class="popup__viber">
-                            <div class="popup__icon">
-                                <img src="../img/vibericon.png" alt="" />
-                            </div>
-                            <div class="popup__text">
-                                <p>Watsapp</p>
-                            </div>
-                        </div>
+                    <div class="zayavka__tg">
+                        <img src="../img/tgicon.png" alt="" />
+                        <p>Telegram</p>
                     </div>
                 </div>
             </div>
@@ -71,16 +60,23 @@
                         ><img src="../img/logo.png" alt="Logo company"
                     /></a>
                 </div>
-                <nav class="header__nav">
-                    <ul class="nav">
-                        <li><a href="../pages/onas.html">О нас</a></li>
-                        <li><a href="../pages/uslugi.html">Услуги</a></li>
-                        <li><a href="../pages/buy.html">Как купить</a></li>
-                        <li><a href="../pages/preim.html">Преимущества</a></li>
-                        <li><a href="../pages/otz.html">Отзывы</a></li>
-                        <li><a href="../pages/contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="header__menu">
+                    <div class="header__burg">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="nav">
+                            <li><a href="../pages/onas.html">О нас</a></li>
+                            <li><a href="../pages/uslugi.html">Услуги</a></li>
+                            <li><a href="../pages/buy.html">Как купить</a></li>
+                            <li><a href="../pages/preim.html">Преимущества</a></li>
+                            <li><a href="../pages/otz.html">Отзывы</a></li>
+                            <li><a href="../pages/contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="header__media">
                     <a href=""><img src="../img/tgicon.png" alt="" /> </a>
                     <a href=""><img src="../img/vibericon.png" alt="" /></a>
@@ -89,9 +85,6 @@
                 <div class="header__contacts">
                     <p>+7 (8352) 67-52-52</p>
                     <p>+7 (927) 997-12-42</p>
-                </div>
-                <div class="header__burger">
-                    <span></span>
                 </div>
             </div>
         </header>
@@ -109,7 +102,7 @@
                                 БЕСПЛАТНО
                             </p>
                         </div>
-                        <div class="buy__button">
+                        <div id="MyModal" class="button">
                             <a href="../pages/connect.html">Оставить заявку</a>
                         </div>
                     </div>
@@ -229,8 +222,8 @@
                                 передачи автомобиля в руки клиенту.
                             </p>
                         </div>
-                        <div class="onas__button">
-                            <a href="../pages/connect.html">Оставить заявку</a>
+                        <div id="MyModal" class="button">
+                            <a>Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -290,8 +283,8 @@
                                         <p>2 700 000 ₽</p>
                                     </div>
                                 </div>
-                                <div class="avto__button">
-                                    <a href="">Оставить заявку</a>
+                                <div id="MyModal" class="button">
+                                    <a href="#">Оставить заявку</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -673,6 +666,8 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>

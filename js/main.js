@@ -5,6 +5,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
 var swiper1 = new Swiper(".mySwiper2", {
@@ -74,7 +78,44 @@ var swiper = new Swiper(".mySwiper2", {
         },
     });
 
-    document.querySelector('.header__burger').addEventListener('click', function() {
-        this.classList.toggle('active');
-        document.querySelector('.header__nav').classList.toggle('open')
+    let modal = document.getElementById("MyModal");
+    let buttons = document.getElementsByClassName("button");
+    let span = document.getElementsByClassName("close__modal");
+
+    for (let i = 0; i < buttons.length; i++){
+        buttons[i].onclick = function() {
+            modal.style.display = "block";
+        }
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+    window.onclick = function(event) {
+        if (event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+
+    const burger = querySelector('.header__burg');
+    const menu = getElementsByClassName('.header__nav');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
     })
+
+    function add() {
+        menu.classList.toggle('.active');
+    }
+document.getElementById('connect').addEventListener('.zayavka__button', function(event) {
+    event.preventDefault();
+    document.getElementById('nummber').ariaValueMax;
+    sendDateToServer(number);
+});
+
+function sendDateToServer(number) {
+    fetch()
+}
+    
+
